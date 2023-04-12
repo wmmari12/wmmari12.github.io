@@ -1,0 +1,7 @@
+.index-contact {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 45px;
+    background-color: aquamarine;
+}
