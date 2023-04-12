@@ -5,3 +5,11 @@
     height: 45px;
     background-color: aquamarine;
 }
+.icon-phone, .icon-correo{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 15px;
+    margin-inline-end: auto;
+   
+}
