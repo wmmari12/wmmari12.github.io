@@ -1,4 +1,5 @@
 .index-contact {
+    
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -11,5 +12,9 @@
     align-items: center;
     height: 15px;
     margin-inline-end: auto;
-   
+    
+}
+
+.correo{
+    margin: 10px;
 }
