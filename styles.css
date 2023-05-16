@@ -42,9 +42,13 @@
 .img-home{
     margin-bottom: 3%;
     margin-top: 3%;
-    width: 80%;
-    height: auto;
-
+    width: 85%;
+    text-align: justify;
+    padding-top: 6px;
+    padding-right: 7.5%;
+    line-height: 2;
+    padding-left: 7.5%;
+    
 }
 
 .historia-img{
@@ -81,16 +85,25 @@ li{
     position:relative;
 }
 .text-info{
-    margin-bottom: 3%;
-    margin-top: 3%;
+    margin-bottom: 1%;
+    margin-top: 1%;
     color: #333;
     font-weight: 400;
     font-size: 18px;
-    text-align:start;
     text-align: justify;
     letter-spacing: 0.5px;
     padding-top: 6px;
     padding-right: 7.5%;
     line-height: 2;
     padding-left: 7.5%;
+}
+.subtitle{
+    margin-bottom: 1%;
+    margin-top: 3%;
+    color: #333;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    line-height: 2;
 }
