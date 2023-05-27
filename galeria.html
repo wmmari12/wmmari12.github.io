@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
-<body class="main">
+<body class="main" onload="imagenInicial();">
 
     <!-- Información de contacto -->
     <div class="index-contact">
@@ -36,10 +36,17 @@
         </ul>
 
     </div>
+    <br>
     
-    <div class="img-home">
-        <img class="logo-img" src="images/logoQueenNails.png" alt="logo queen nails">
-    </div>
+
+        <div id="imagen"></div>
+        <div class="carrousel">
+        <button onclick="antImagen()">Anterior</button>
+        <button onclick="sigImagen()">Siguiente</button>
+        </div>
+        <script src="./gallery.js"></script>
+    
+    <script src="gallery.js"></script>
 </body>
 
 </html>

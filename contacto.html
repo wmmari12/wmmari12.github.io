@@ -37,16 +37,26 @@
 
     </div>
     <div>
-        <p class="text-info">Bienvenido a Queen Nails, una empresa de manicura especializada en brindar un servicio
-            excepcional de cuidado de uñas a nuestros clientes. Nuestra misión es ofrecer a nuestros clientes
-            un ambiente relajante y un servicio de alta calidad para asegurar que se sientan mimados y salgan
-            con unas uñas hermosas y saludables. Nos destacamos de la competencia por nuestro enfoque personalizado
-            y la atención al detalle en cada servicio de manicura que ofrecemos. ¡Nos encantaría que formara parte de
-            nuestra comunidad de clientes felices!</p>
+        <p class="text-info">Complete nuestro formulario de contacto para solicitar turnos o enviarnos sus consultas o comentarios. Le responderemos a la brevedad.</p>
     </div>
-    <div class="img-home">
-        <img class="logo-img" src="images/logoQueenNails.png" alt="logo queen nails">
+    <div class="formulario">
+        <form name="contacto" id = "formulario" onsubmit="validar(event)" >
+        
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" onblur="validarFormularioNombre()"><br>
+                <div id="errorNom" class="mjeError"> Debe ingresar un nombre de 5 a 50 caracteres.</div>
+                <input type="text" id="telefono" name="telefono" placeholder="Teléfono" onblur="validarFormularioTelefono()"><br>
+                <div id="errorTel" class="mjeError"> Debe inngresar un teléfono de 7 a 14 números.</div>
+                <textarea id="mensaje" name="mensaje" placeholder="Mensaje" onblur="validarFormularioMensaje()"></textarea> <br>
+                <div id="errorMsj" class="mjeError"> Debe ingresar un mensaje de 5 a 150 caracteres.</div>
+                <input type="submit" value="Enviar" id="btnenviar" placeholder ="Enviar" class="submit">
+        </form> 
+
     </div>
+
+    <div id="datos" class="datos">
+    </div>
+
+      <script src="form.js"></script>
 </body>
 
 </html>
