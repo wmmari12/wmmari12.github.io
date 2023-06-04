@@ -1,52 +1,11 @@
-/* let imgArray = new Array();
-
-imgArray[0] = new Image();
-imgArray[0].src = './images/images-esmaltado/foto2.jpeg';
-
-imgArray[1] = new Image();
-imgArray[1].src = './images/images-esmaltado/foto3.jpeg';
-
-imgArray[2] = new Image();
-imgArray[2].src = './images/images-esmaltado/foto4.jpeg';
-
-imgArray[3] = new Image();
-imgArray[3].src = './images/images-esmaltado/foto5.jpeg';
-
-
-function nextImage(){
-  var img = document.getElementById("mainImage");
-  for(var i = 0; i < imgArray.length;i++){
-      if(imgArray[i].src == img.src){
-          if(i === imgArray.length){
-              document.getElementById("mainImage").src = imgArray[0].src;
-              break;
-          }
-          document.getElementById("mainImage").src = imgArray[i+1].src;
-          break;
-      }
-  }
-}
-
-function previousImage(){
-  var img = document.getElementById("mainImage");
-  for(var i = imgArray.length-1; i >=0 ;i--){
-      if(imgArray[i].src == img.src){
-          if(i === imgArray.length){
-              document.getElementById("mainImage").src = imgArray[4].src;
-              break;
-          }
-          document.getElementById("mainImage").src = imgArray[i-1].src;
-          break;
-      }
-  }
-}*/
-
-
-var imagenes = ["./images/images-esmaltado/foto1.jpeg",
-    "./images/images-esmaltado/foto2.jpeg",
-    "./images/images-esmaltado/foto3.jpeg",
-    "./images/images-esmaltado/foto4.jpeg",
-    "./images/images-esmaltado/foto5.jpeg"];
+var imagenes = ["./images/images-esmaltado/foto6.jpeg",
+"./images/images-esmaltado/foto7.jpeg",
+"./images/images-esmaltado/foto8.jpeg",
+"./images/images-esmaltado/foto9.jpeg",
+"./images/images-esmaltado/foto10.jpeg",
+"./images/images-esmaltado/foto12.jpeg",
+"./images/images-esmaltado/foto13.jpeg",
+"./images/images-esmaltado/foto14.jpeg"];
 var indice = 0;
 
 
@@ -56,7 +15,7 @@ function imagenInicial() {
     document.getElementById('imagen').appendChild(img);
 }
 
-function sigImagen() {
+function nextImagen() {
     var img = document.getElementById('imagen').getElementsByTagName('img')[0]
     indice++;
     indice = indice % imagenes.length;
@@ -64,7 +23,7 @@ function sigImagen() {
     
 }
 
-function antImagen() {
+function prevImagen() {
     var img = document.getElementById('imagen').getElementsByTagName('img')[0];
     indice--;
     if (indice < 0) {

@@ -17,7 +17,7 @@
         <p class="text-contact"> wmari12@gmail.com</p>
         <p> | </p>
         <img class="icon-phone" src="images/phone-call.png" alt="phone">
-        <p class="text-contact"> 266-400766</p>
+        <p class="text-contact"> 266-4007666</p>
 
     </div>
     <!-- Logo -->
@@ -37,10 +37,11 @@
 
     </div>
     <div>
+        <h3 class="subtitle">Formulario de Contacto</h3>
         <p class="text-info">Complete nuestro formulario de contacto para solicitar turnos o enviarnos sus consultas o comentarios. Le responderemos a la brevedad.</p>
     </div>
     <div class="formulario">
-        <form name="contacto" id = "formulario" onsubmit="validar(event)" >
+        <form name="contacto" id = "formulario">
         
                 <input type="text" id="nombre" name="nombre" placeholder="Nombre" onblur="validarFormularioNombre()"><br>
                 <div id="errorNom" class="mjeError"> Debe ingresar un nombre de 5 a 50 caracteres.</div>
@@ -48,11 +49,11 @@
                 <div id="errorTel" class="mjeError"> Debe inngresar un teléfono de 7 a 14 números.</div>
                 <textarea id="mensaje" name="mensaje" placeholder="Mensaje" onblur="validarFormularioMensaje()"></textarea> <br>
                 <div id="errorMsj" class="mjeError"> Debe ingresar un mensaje de 5 a 150 caracteres.</div>
-                <input type="submit" value="Enviar" id="btnenviar" placeholder ="Enviar" class="submit">
+                <input type="submit" value="Enviar" id="btnenviar" placeholder ="Enviar" class="submit" onclick="validar(event)">
         </form> 
 
     </div>
-
+    <h3 id="h3Datos" class="h3Datos">Datos enviados por el Formulario</h3>
     <div id="datos" class="datos">
     </div>
 
