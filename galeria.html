@@ -17,7 +17,7 @@
         <p class="text-contact"> wmari12@gmail.com</p>
         <p> | </p>
         <img class="icon-phone" src="images/phone-call.png" alt="phone">
-        <p class="text-contact"> 266-400766</p>
+        <p class="text-contact"> 266-4007666</p>
 
     </div>
     <!-- Logo -->
@@ -36,16 +36,18 @@
         </ul>
 
     </div>
-    <br>
-    
+    <div>
+        <h3 class="subtitle">Galería de Fotos</h3>
+        <p class="text-info">Navegue por nuestra galería de fotos para conocer los diferentes trabajos realizados a nuestras clientas</p>
+    </div>
 
-        <div id="imagen"></div>
-        <div class="carrousel">
-        <button onclick="antImagen()">Anterior</button>
-        <button onclick="sigImagen()">Siguiente</button>
-        </div>
-        <script src="./gallery.js"></script>
-    
+    <div class="carrousel">
+        <div class="btnCarrouselPrev" > <button onclick="prevImagen()">Anterior</button> </div>
+        <div id="imagen" class="imgCarrousel"></div>
+        <div class="btnCarrouselNext" > <button onclick="nextImagen()">Siguiente</button> </div>
+    </div>
+    <!--<script src="./gallery.js"></script>-->
+
     <script src="gallery.js"></script>
 </body>
 
