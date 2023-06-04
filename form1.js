@@ -20,7 +20,9 @@ function validarFormularioNombre() {
         document.getElementById('nombre').classList.remove('input-correcto');
         document.getElementById('nombre').classList.add('input-incorrecto');
         document.getElementById('errorNom').classList.remove('mjeError');
-    }
+    
+    }  
+    
 }
 
 function validarFormularioTelefono() {
@@ -48,11 +50,12 @@ function validarFormularioMensaje() {
         document.getElementById('mensaje').classList.add('input-incorrecto');
         document.getElementById('errorMsj').classList.remove('mjeError');
     }
+
 }
 
 
 function validar(e) {
-    e.preventDefault();
+
     var validaform = document.getElementById('formulario');
     if (valida.nombre && valida.mensaje && valida.telefono) {
         document.getElementById('nombre').classList.remove('input-correcto');
@@ -61,27 +64,25 @@ function validar(e) {
         document.getElementById('nombre').classList.remove('input-incorrecto');
         document.getElementById('telefono').classList.remove('input-incorrecto');
         document.getElementById('mensaje').classList.remove('input-incorrecto');
-
+        
         mostrarDatos();
         validaform.reset();
     }
+    
     return false;
 }
 
 function mostrarDatos() {
-    //let nombreForm = document.getElementById('nombre').value;
+    
     let datoNom = document.createElement('p');
     let datoTel = document.createElement('p');
     let datoMsj = document.createElement('p');
+    let resetMsj=document.createElement('p')
 
-//nuevo limpia los errores
-    //  let errores=document.querySelector("datos");
-    //  errores.innerHTML=""
-    //  errores.style.display=none;
-//
     datoNom.textContent = "El Nombre ingresado es:" + nombreForm;
     datoTel.textContent = "El telefono es: " + telForm;
     datoMsj.textContent = "Mensaje: " + msjForm;
     document.getElementById('datos').appendChild(datoNom).appendChild(datoTel).appendChild(datoMsj);
+    resetMsj.textContent="<a href='contacto.html'>Contacto</a>"
 }
 
